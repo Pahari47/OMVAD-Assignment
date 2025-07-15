@@ -14,8 +14,14 @@ async function fetchMetadataAndSummary(url) {
     favicon = u.origin + (favicon.startsWith('/') ? '' : '/') + favicon;
   }
   // Get summary from Jina AI
-  const jinaRes = await axios.post('https://r.jina.ai/api/v1/summary', { url });
-  const summary = jinaRes.data.summary || '';
+  let summary = '';
+  try {
+    const jinaRes = await axios.post('https://r.jina.ai/api/v1/summary', { url });
+    summary = jinaRes.data.summary || '';
+  } catch (err) {
+    console.error('Jina AI summary fetch failed:', err.response?.data || err.message);
+    summary = '';
+  }
   return { title, favicon, summary };
 }
 

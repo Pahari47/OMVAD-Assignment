@@ -10,6 +10,7 @@ const createBookmark = async (req, res) => {
     const bookmark = await Bookmark.create({ url, title, favicon, summary, tags, user, order });
     res.status(201).json(bookmark);
   } catch (err) {
+    console.error('Error in createBookmark:', err);
     res.status(500).json({ message: 'Error creating bookmark' });
   }
 };
