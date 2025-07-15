@@ -15,8 +15,11 @@ async function fetchMetadataAndSummary(url) {
   let summary = '';
   try {
     const target = encodeURIComponent(url);
-    const res = await axios.get(`https://r.jina.ai/http://${target}`);
+    const res = await axios.get(`https://r.jina.ai/${target}`);
     summary = typeof res.data === 'string' ? res.data : '';
+    if (summary.length > 200) {
+      summary = summary.slice(0, 200) + '...';
+    }
   } catch (err) {
     console.error('Jina AI summary fetch failed:', err.response?.data || err.message);
     summary = 'Summary temporarily unavailable.';
