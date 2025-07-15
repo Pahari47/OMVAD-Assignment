@@ -16,7 +16,6 @@ export default function Landing() {
         Get Started
       </button>
       {showAuth && <AuthModal onClose={() => setShowAuth(false)} />}
-      <footer className="absolute bottom-4 text-gray-400 text-sm">Made with ❤️ for OMVAD Assignment</footer>
     </div>
   );
 } 
