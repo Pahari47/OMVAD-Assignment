@@ -22,15 +22,12 @@ function NavBar() {
           </button>
         )}
         {isAuth && (
-          <>
-            <Link to="/dashboard" className="mr-4 hover:underline">Dashboard</Link>
-            <button
-              className="bg-red-600 hover:bg-red-700 px-4 py-2 rounded-lg font-semibold transition"
-              onClick={() => { localStorage.removeItem("token"); navigate("/"); window.location.reload(); }}
-            >
-              Logout
-            </button>
-          </>
+          <button
+            className="bg-red-600 hover:bg-red-700 px-4 py-2 rounded-lg font-semibold transition"
+            onClick={() => { localStorage.removeItem("token"); navigate("/"); window.location.reload(); }}
+          >
+            Logout
+          </button>
         )}
       </div>
     </nav>

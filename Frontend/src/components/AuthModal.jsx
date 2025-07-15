@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import api from "../api/axios";
 
 export default function AuthModal({ onClose }) {
@@ -7,6 +8,7 @@ export default function AuthModal({ onClose }) {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
   const handleAuth = async (e) => {
     e.preventDefault();
@@ -18,7 +20,7 @@ export default function AuthModal({ onClose }) {
       localStorage.setItem("token", res.data.token);
       setLoading(false);
       onClose();
-      window.location.reload();
+      navigate("/dashboard");
     } catch (err) {
       setError(err.response?.data?.message || "Auth failed");
       setLoading(false);
