@@ -1,0 +1,31 @@
+link-saver-app/
+│
+├── backend/
+│   ├── src/
+│   │   ├── controllers/      # Route handler logic (e.g., auth, bookmarks)
+│   │   ├── models/           # Mongoose models (User, Bookmark)
+│   │   ├── routes/           # Express route definitions
+│   │   ├── middleware/       # Auth, error handling, etc.
+│   │   ├── utils/            # Helper functions (e.g., fetch metadata, Jina AI)
+│   │   ├── app.js            # Express app setup
+│   │   └── server.js         # Entry point
+│   ├── .env                  # Environment variables (DB URI, JWT secret, etc.)
+│   ├── package.json
+│   └── README.md
+│
+├── frontend/
+│   ├── public/               # Static files (index.html, favicon, etc.)
+│   ├── src/
+│   │   ├── components/       # React components (BookmarkList, AuthForm, etc.)
+│   │   ├── pages/            # Page components (Home, Login, Signup)
+│   │   ├── api/              # API calls to backend
+│   │   ├── hooks/            # Custom React hooks
+│   │   ├── utils/            # Frontend helpers (e.g., theme, drag-drop)
+│   │   ├── App.js
+│   │   └── index.js
+│   ├── .env                  # Frontend env (API URL, etc.)
+│   ├── package.json
+│   └── README.md
+│
+├── README.md                 # Project overview
+└── .gitignore
