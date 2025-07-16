@@ -46,21 +46,9 @@ npm run dev
 ---
 
 ## 🌐 Deployment
-- **Frontend:** Deploy to Vercel (recommended for static React/Vite sites)
-- **Backend:** Deploy to Render, Railway, or Heroku (Vercel is not suitable for Express servers)
-- **Update** `VITE_API_URL` in the frontend to your backend's public URL after deployment.
-
----
-
-## 📝 What I'd Do Next
-- Add email verification and password reset
-- Add user profile and settings
-- Add bookmark editing and tag management UI
-- Add pagination or infinite scroll for large bookmark lists
-- Add analytics/dashboard for user activity
-- Add more robust error handling and user feedback
-- Add tests (unit, integration, e2e)
-- Polish mobile UI further
+- **Frontend:** Deploy on Vercel
+- **Backend:** Deploy on Render
+- **Update** frontend : https://omvad-assignment.vercel.app/  backend : https://omvad-assignment-4sw3.onrender.com
 
 ---
 
@@ -76,6 +64,5 @@ npm run dev
 
 ## 🙌 Credits
 - [Jina AI r.jina.ai](https://r.jina.ai/) for free summarization API
-- [unDraw](https://undraw.co/) for illustrations
 
 ---
