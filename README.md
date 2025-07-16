@@ -51,6 +51,18 @@ npm run dev
 
 ---
 
+## 📝 What I'd Do Next
+- Add email verification and password reset
+- Add user profile and settings
+- Add bookmark editing and tag management UI
+- Add pagination or infinite scroll for large bookmark lists
+- Add analytics/dashboard for user activity
+- Add more robust error handling and user feedback
+- Add tests (unit, integration, e2e)
+- Polish mobile UI further
+
+---
+
 ## ⏱️ Time Spent
 - **Planning & Design:** 1 hour
 - **Backend Implementation:** 3 hours
