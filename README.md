@@ -17,8 +17,7 @@ A full-stack web app to save, organize, and auto-summarize your favorite links. 
 
 ### 1. **Clone the Repo**
 ```bash
-git clone <your-repo-url>
-cd <project-root>
+git clone https://github.com/Pahari47/OMVAD-Assignment
 ```
 
 ### 2. **Backend Setup**
